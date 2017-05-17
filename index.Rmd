@@ -59,7 +59,7 @@ The R packages used here include: quanteda, tm, stringi, downloader, readr, stri
 #require(downloader); #require(stringr)
 # Download and unzip the data to local disk
 url <- "https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip"
-dfolder <- "./data"
+dfolder <- "../data_capstone"
 
 if(!file.exists(dfolder)) file.create(dfolder)
 
@@ -93,7 +93,7 @@ tpath <- file.path("fileSummary.rds")
 
 if (!file.exists(tpath)) {
 
-setwd("./data/final/en_US")
+setwd("../data_capstone/final/en_US")
 getwd()
 
 file.name <- c(list.files(), "Total")
@@ -142,9 +142,9 @@ remove_nonascii <- function(x) {
 }
 # Load local files  
 
-blog <- remove_nonascii("./data/final/en_US/en_US.blogs.txt")
-twit <- remove_nonascii("./data/final/en_US/en_US.twitter.txt") 
-news <- read_lines("./data/final/en_US/en_US.news.txt") 
+blog <- remove_nonascii("../data_capstone/final/en_US/en_US.blogs.txt")
+twit <- remove_nonascii("../data_capstone/final/en_US/en_US.twitter.txt") 
+news <- read_lines("../data_capstone/final/en_US/en_US.news.txt") 
 news <- news[-grep("tmp", iconv(news, "latin1", "ASCII", sub = "tmp"))]
 
 ```

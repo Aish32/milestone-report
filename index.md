@@ -30,8 +30,9 @@ The R packages used here include: quanteda, tm, stringi, downloader, readr, stri
 Download the data and save to local disk:  
 
 ```
-[1] "./data/final/en_US/en_US.blogs.txt"   "./data/final/en_US/en_US.news.txt"   
-[3] "./data/final/en_US/en_US.twitter.txt"
+[1] "../data_capstone/final/en_US/en_US.blogs.txt"  
+[2] "../data_capstone/final/en_US/en_US.news.txt"   
+[3] "../data_capstone/final/en_US/en_US.twitter.txt"
 ```
 ### Summary Statistics about the Data Sets
 
@@ -104,14 +105,14 @@ sample quanteda corpus:
 Corpus consisting of 37981 documents, showing 5 documents.
 
   Text Types Tokens Sentences author       datetimestamp description heading id language origin
- text1     3      3         1   <NA> 2017-05-16 21:51:19        <NA>    <NA>  1       en   <NA>
- text2    10     10         1   <NA> 2017-05-16 21:51:19        <NA>    <NA>  2       en   <NA>
- text3     9     10         1   <NA> 2017-05-16 21:51:19        <NA>    <NA>  3       en   <NA>
- text4    21     26         1   <NA> 2017-05-16 21:51:19        <NA>    <NA>  4       en   <NA>
- text5    17     27         1   <NA> 2017-05-16 21:51:19        <NA>    <NA>  5       en   <NA>
+ text1     3      3         1   <NA> 2017-05-17 09:42:41        <NA>    <NA>  1       en   <NA>
+ text2    10     10         1   <NA> 2017-05-17 09:42:41        <NA>    <NA>  2       en   <NA>
+ text3     9     10         1   <NA> 2017-05-17 09:42:41        <NA>    <NA>  3       en   <NA>
+ text4    21     26         1   <NA> 2017-05-17 09:42:41        <NA>    <NA>  4       en   <NA>
+ text5    17     27         1   <NA> 2017-05-17 09:42:41        <NA>    <NA>  5       en   <NA>
 
 Source:  Converted from tm VCorpus 'tcorps'
-Created: Tue May 16 17:54:42 2017
+Created: Wed May 17 05:45:55 2017
 Notes:   
 ```
 
@@ -244,14 +245,14 @@ other attached packages:
 [11] downloader_0.4    knitr_1.15.1     
 
 loaded via a namespace (and not attached):
- [1] Rcpp_0.12.9         ca_0.70             plyr_1.8.4          highr_0.6          
- [5] tools_3.3.2         digest_0.6.12       evaluate_0.10       gtable_0.2.0       
- [9] lattice_0.20-34     Matrix_1.2-8        fastmatch_1.1-0     DBI_0.6            
-[13] yaml_2.1.14         parallel_3.3.2      rprojroot_1.2       grid_3.3.2         
-[17] data.table_1.10.4   R6_2.2.0            rmarkdown_1.3       magrittr_1.5       
-[21] backports_1.0.5     scales_0.4.1        codetools_0.2-15    SnowballC_0.5.1    
-[25] htmltools_0.3.5     assertthat_0.1      colorspace_1.3-2    labeling_0.3       
-[29] lazyeval_0.2.0      RcppParallel_4.3.20 munsell_0.4.3       slam_0.1-40        
+ [1] Rcpp_0.12.9         ca_0.70             magrittr_1.5        munsell_0.4.3      
+ [5] lattice_0.20-34     colorspace_1.3-2    R6_2.2.0            fastmatch_1.1-0    
+ [9] plyr_1.8.4          tools_3.3.2         parallel_3.3.2      grid_3.3.2         
+[13] data.table_1.10.4   gtable_0.2.0        DBI_0.6             htmltools_0.3.5    
+[17] RcppParallel_4.3.20 yaml_2.1.14         lazyeval_0.2.0      assertthat_0.1     
+[21] rprojroot_1.2       digest_0.6.12       Matrix_1.2-8        SnowballC_0.5.1    
+[25] slam_0.1-40         evaluate_0.10       rmarkdown_1.3       labeling_0.3       
+[29] scales_0.4.1        backports_1.0.5    
 ```
 
 
